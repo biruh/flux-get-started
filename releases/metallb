@@ -2,17 +2,17 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: mongodb
-  namespace: demo
+  name: metallb
+  namespace: default
   annotations:
     fluxcd.io/automated: "false"
     fluxcd.io/tag.chart-image: semver:~4.0
 spec:
-  releaseName: mongodb
+  releaseName: metallb
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: mongodb
-    version: 7.6.3
+    name: metallb
+    version: 0.8.1
   values:
     configInline:
       address-pools:
