@@ -17,6 +17,6 @@ spec:
     configInline:
       address-pools:
         - name: default
-        protocol: layer2
-        addresses:
-        - 10.233.21.1-10.233.0.50
+          protocol: layer2
+          addresses:
+          - 10.233.21.1-10.233.0.50
